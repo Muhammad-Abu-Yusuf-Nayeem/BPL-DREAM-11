@@ -8,7 +8,7 @@ const Banner = ({ handleAddMoney }) => {
     >
       {/* You can put content inside this banner */}
       <div>
-        <img src="../../public/assets/banner-main.png" alt="" />
+        <img src="/assets/banner-main.png" alt="" />
       </div>
       <h2 className="text-[40px] font-bold text-white text-center">
         Assemble Your Ultimate Dream 11 Cricket Team

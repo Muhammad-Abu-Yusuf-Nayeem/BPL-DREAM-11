@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "skill": "all-rounder",
+    "handed": "left",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox spin",
+    "priceBPL": 18000000,
+    "image": "https://i.ibb.co/G4zvQZ9w/Shakib-Al-Hasan.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "skill": "batsman",
+    "handed": "left",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": null,
+    "priceBPL": 12000000,
+    "image": "https://i.ibb.co/6Jr6jnst/Tamim-Iqbal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "skill": "bowler",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "priceBPL": 9000000,
+    "image": "https://i.ibb.co/9HQBpfth/Taskin-Ahmed.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "skill": "wicket-keeper",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": null,
+    "priceBPL": 13000000,
+    "image": "https://i.ibb.co/jvB5FVVQ/Mushfiqur-Rahim.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "skill": "bowler",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "priceBPL": 20000000,
+    "image": "https://i.ibb.co/cdzW3jr/Rashid-Khan.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "skill": "all-rounder",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "priceBPL": 22000000,
+    "image": "https://i.ibb.co/9mPrwvcm/Andre-Russell.jpg"
+  },
+
+  {
+    "id": 8,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "skill": "batsman",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": null,
+    "priceBPL": 19000000,
+    "image": "https://i.ibb.co/Y4TH5nw9/Babar-Azam.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Wanindu Hasaranga",
+    "country": "Sri Lanka",
+    "skill": "all-rounder",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "priceBPL": 16000000,
+    "image": "https://i.ibb.co/6qD5V81/Wanindu-Hasaranga.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "skill": "wicket-keeper",
+    "handed": "right",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": null,
+    "priceBPL": 10000000,
+    "image": "https://i.ibb.co/Rk1xLTNQ/Litton-Das.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "skill": "bowler",
+    "handed": "left",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast",
+    "priceBPL": 23000000,
+    "image": "https://i.ibb.co/7twGYbDT/Mitchell-Starc.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Nicholas Pooran",
+    "country": "West Indies",
+    "skill": "wicket-keeper",
+    "handed": "left",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": null,
+    "priceBPL": 15000000,
+    "image": "https://i.ibb.co/PvNmRTXd/Nicholas-Pooran.jpg"
+  }
+]
