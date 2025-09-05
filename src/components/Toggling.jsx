@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const Toggling = ({ handleclick, selected, selectedPlayers }) => {
   return (
     <div className="flex items-center justify-between py-6">
@@ -38,5 +39,9 @@ const Toggling = ({ handleclick, selected, selectedPlayers }) => {
     </div>
   );
 };
-
+Toggling.propTypes = {
+  handleclick: PropTypes.func,
+  selected: PropTypes.string,
+  selectedPlayers: PropTypes.array,
+};
 export default Toggling;

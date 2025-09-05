@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const Banner = ({ handleAddMoney }) => {
   return (
     <div
@@ -26,6 +27,9 @@ const Banner = ({ handleAddMoney }) => {
       </div>
     </div>
   );
+};
+Banner.propTypes = {
+  handleAddMoney: PropTypes.func,
 };
 
 export default Banner;

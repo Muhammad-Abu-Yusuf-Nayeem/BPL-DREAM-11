@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [money, setMoney] = useState(0);
@@ -13,9 +14,12 @@ function App() {
   };
   return (
     <>
-      <div className="w-10/12 mx-auto">
-        <Navbar money={money} />
-        <Main handleAddMoney={handleAddMoney} money={money} />
+      <div>
+        <div className="w-10/12 mx-auto">
+          <Navbar money={money} />
+          <Main handleAddMoney={handleAddMoney} money={money} />
+        </div>
+        <Footer></Footer>
       </div>
     </>
   );

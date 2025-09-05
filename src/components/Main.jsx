@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 import Toggling from "./Toggling";
+import PropTypes from "prop-types";
 
 const Main = ({ handleAddMoney, money }) => {
   const [selectedPlayers, setselectedPlayers] = useState([]);
@@ -48,11 +49,13 @@ const Main = ({ handleAddMoney, money }) => {
   const handleRemovePlayers = (player) => {
     const updatePlayers = selectedPlayers.filter((p) => p.id !== player.id);
     setselectedPlayers(updatePlayers);
+    handleAddMoney(player.priceBPL);
+    alert(`${player.name} " are removed successfully"`);
     console.log("selected players", updatePlayers);
   };
 
   return (
-    <div>
+    <div className="mb-[300px]">
       <Banner handleAddMoney={handleAddMoney} />
       <Toggling
         handleclick={handleclick}
@@ -75,5 +78,8 @@ const Main = ({ handleAddMoney, money }) => {
     </div>
   );
 };
-
+Main.propTypes = {
+  handleAddMoney: PropTypes.func,
+  money: PropTypes.number,
+};
 export default Main;

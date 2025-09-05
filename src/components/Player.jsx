@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosFlag } from "react-icons/io";
 
@@ -39,5 +39,8 @@ const Player = ({ player, handleAddPlayers }) => {
     </div>
   );
 };
-
+Player.propTypes = {
+  player: PropTypes.object,
+  handleAddPlayers: PropTypes.func,
+};
 export default Player;

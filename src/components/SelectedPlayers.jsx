@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import React from "react";
 import SPlayer from "./SPlayer";
 
 const SelectedPlayers = ({
-    handleclick,
+  handleclick,
   selectedPlayers,
   selected,
   handleRemovePlayers,
@@ -34,5 +35,10 @@ const SelectedPlayers = ({
     </div>
   );
 };
-
+SelectedPlayers.propTypes = {
+  handleclick: PropTypes.func,
+    selectedPlayers: PropTypes.array, 
+    selected: PropTypes.string,
+    handleRemovePlayers: PropTypes.func,
+};
 export default SelectedPlayers;

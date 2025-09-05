@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const SPlayer = ({ player, handleRemovePlayers }) => {
@@ -15,19 +16,23 @@ const SPlayer = ({ player, handleRemovePlayers }) => {
           <h2 className="font-semibold text-[24px] text-[#131313]">
             {player.name}
           </h2>
-          <h4 className="text-[16px] text-[#131313a2]">
-            {player.skill}
-          </h4>
+          <h4 className="text-[16px] text-[#131313a2]">{player.skill}</h4>
           <h4 className="text-[16px] text-[#131313a2]">
             {player.priceBPL} BDT
           </h4>
         </div>
       </div>
-      <button onClick={() => handleRemovePlayers(player)} className="text-2xl text-[#ff0000a8]">
+      <button
+        onClick={() => handleRemovePlayers(player)}
+        className="text-2xl text-[#ff0000a8]"
+      >
         <RiDeleteBin6Line />
       </button>
     </div>
   );
 };
-
+SPlayer.propTypes = {
+  player: PropTypes.object,
+  handleRemovePlayers: PropTypes.func,
+};
 export default SPlayer;
