@@ -2,6 +2,7 @@ import React from "react";
 import SPlayer from "./SPlayer";
 
 const SelectedPlayers = ({
+    handleclick,
   selectedPlayers,
   selected,
   handleRemovePlayers,
@@ -22,7 +23,10 @@ const SelectedPlayers = ({
           />
         ))}
         <span className="w-fit border border-[#131313] p-2 flex  items-center rounded-2xl mt-10">
-          <button className="bg-[#E7FE29] px-4 py-2 rounded-lg">
+          <button
+            onClick={() => handleclick("available")}
+            className="bg-[#E7FE29] px-4 py-2 rounded-lg"
+          >
             Add More Player
           </button>
         </span>

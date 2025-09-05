@@ -67,6 +67,7 @@ const Main = ({ handleAddMoney, money }) => {
         selectedPlayers={selectedPlayers}
       ></AvailablePlayers>
       <SelectedPlayers
+        handleclick={handleclick}
         selectedPlayers={selectedPlayers}
         selected={selected}
         handleRemovePlayers={handleRemovePlayers}

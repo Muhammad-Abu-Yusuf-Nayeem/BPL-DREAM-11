@@ -16,7 +16,7 @@ const SPlayer = ({ player, handleRemovePlayers }) => {
             {player.name}
           </h2>
           <h4 className="text-[16px] text-[#131313a2]">
-            {player.battingStyle}
+            {player.skill}
           </h4>
           <h4 className="text-[16px] text-[#131313a2]">
             {player.priceBPL} BDT
