@@ -1,7 +1,11 @@
-import React from 'react';
-import SPlayer from './SPlayer';
+import React from "react";
+import SPlayer from "./SPlayer";
 
-const SelectedPlayers = ({ selectedPlayers, selected }) => {
+const SelectedPlayers = ({
+  selectedPlayers,
+  selected,
+  handleRemovePlayers,
+}) => {
   return (
     <div>
       {/* <h1 className="text-2xl text-center bg-amber-300 py-4 my-4 font-bold">
@@ -11,7 +15,11 @@ const SelectedPlayers = ({ selectedPlayers, selected }) => {
         className={`${selected === "selected" ? "display-block" : "hidden"}`}
       >
         {selectedPlayers.map((player, idx) => (
-          <SPlayer key={idx} player={player} />
+          <SPlayer
+            key={idx}
+            player={player}
+            handleRemovePlayers={handleRemovePlayers}
+          />
         ))}
         <span className="w-fit border border-[#131313] p-2 flex  items-center rounded-2xl mt-10">
           <button className="bg-[#E7FE29] px-4 py-2 rounded-lg">

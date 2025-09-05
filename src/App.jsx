@@ -15,7 +15,7 @@ function App() {
     <>
       <div className="w-10/12 mx-auto">
         <Navbar money={money} />
-        <Main handleAddMoney={handleAddMoney} />
+        <Main handleAddMoney={handleAddMoney} money={money} />
       </div>
     </>
   );

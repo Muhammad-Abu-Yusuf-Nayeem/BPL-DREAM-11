@@ -18,7 +18,7 @@ const Banner = ({ handleAddMoney }) => {
       </p>
       <div className="border border-[#E7FE29] rounded-2xl p-2">
         <button
-          onClick={() => handleAddMoney(30000)}
+          onClick={() => handleAddMoney(7000000)}
           className="rounded-lg py-2 px-4 bg-[#E7FE29]"
         >
           Claim Free Credit
