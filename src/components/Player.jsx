@@ -2,7 +2,7 @@ import React from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosFlag } from "react-icons/io";
 
-const Player = ({ player }) => {
+const Player = ({ player, handleAddPlayers }) => {
   return (
     <div className="p-6 rounded-xl bg-[#5a515113]  ">
       <div>
@@ -28,7 +28,10 @@ const Player = ({ player }) => {
         </div>
         <div className="flex items-center justify-between mt-6">
           <p className="font-semibold">Price: ${player.priceBPL}</p>
-          <button className="border px-4 py-2 rounded-lg text-[14px] border-[#1313132c]">
+          <button
+            onClick={() => handleAddPlayers(player)}
+            className="border px-4 py-2 rounded-lg text-[14px] border-[#1313132c]"
+          >
             Choose Player
           </button>
         </div>
