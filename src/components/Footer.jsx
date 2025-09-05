@@ -11,7 +11,7 @@ const Footer = () => {
             <img className="" src="../assets/logo-footer.png" alt="" />
           </div>
           {/* links */}
-          <div className="flex justify-between ">
+          <div className="flex flex-col gap-10 md:flex-row justify-between ">
             <div>
               <ul className=" leading-7">
                 <h2 className="font-semibold text-[18px] mb-3">About us</h2>
@@ -23,7 +23,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <ul className="list-disc list-inside leading-10">
+              <ul className="list-disc list-inside leading-8">
                 <h2 className="font-semibold text-[18px] mb-3">Quick Links</h2>
                 <li className="text-[16px]">Home</li>
                 <li className="text-[16px]">Services</li>

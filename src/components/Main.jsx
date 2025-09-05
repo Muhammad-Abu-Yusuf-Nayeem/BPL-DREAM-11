@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // important
 import { useState, useEffect } from "react";
 import Banner from "./Banner";
 import AvailablePlayers from "./AvailablePlayers";
@@ -17,40 +19,38 @@ const Main = ({ handleAddMoney, money }) => {
   }, []);
 
   const handleclick = (str = "available") => {
-    if (str === "available") {
-      setSelected("available");
-    } else {
-      setSelected("selected");
-    }
-
+    setSelected(str);
     console.log("clicked");
   };
 
   const handleAddPlayers = (player) => {
     if (player.priceBPL > money) {
-      alert("You don't have enough money to select this player");
+      toast.error("You don't have enough money to select this player");
       return;
     } else {
       handleAddMoney(-player.priceBPL);
     }
+
     if (selectedPlayers.length >= 6) {
-      alert("You can select up to 6 players only");
+      toast.warning("You can select up to 6 players only");
       return;
     }
+
     if (selectedPlayers.find((p) => p.id === player.id)) {
-      alert("Player already selected");
+      toast.info("Player already selected");
       return;
     }
+
     const updatePlayers = [...selectedPlayers, player];
     setselectedPlayers(updatePlayers);
-    alert(`${player.name} " are selected successfully"`);
+    toast.success(`${player.name} is selected successfully`);
   };
 
   const handleRemovePlayers = (player) => {
     const updatePlayers = selectedPlayers.filter((p) => p.id !== player.id);
     setselectedPlayers(updatePlayers);
     handleAddMoney(player.priceBPL);
-    alert(`${player.name} " are removed successfully"`);
+    toast.success(`${player.name} is removed successfully`);
     console.log("selected players", updatePlayers);
   };
 
@@ -68,18 +68,24 @@ const Main = ({ handleAddMoney, money }) => {
         players={players}
         handleAddPlayers={handleAddPlayers}
         selectedPlayers={selectedPlayers}
-      ></AvailablePlayers>
+      />
       <SelectedPlayers
         handleclick={handleclick}
         selectedPlayers={selectedPlayers}
         selected={selected}
         handleRemovePlayers={handleRemovePlayers}
-      ></SelectedPlayers>
+      />
+
+      {/* Toast container must be here once */}
+      <ToastContainer position="top-center" autoClose={2000} />
     </div>
   );
 };
+
 Main.propTypes = {
   handleAddMoney: PropTypes.func,
   money: PropTypes.number,
+  
 };
+
 export default Main;

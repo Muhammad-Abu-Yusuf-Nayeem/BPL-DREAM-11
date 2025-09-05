@@ -2,11 +2,15 @@ import "./App.css";
 import PropTypes from "prop-types";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 
 function App() {
   const [money, setMoney] = useState(0);
+
+  useEffect(() => {
+    document.title = "BPL-DREAM-11";
+  }, []);
 
   const handleAddMoney = (amount) => {
     setMoney(money + amount);
