@@ -4,24 +4,30 @@ import Newsletter from "./Newsletter";
 const Footer = () => {
   return (
     <div className="relative bg-black pb-10">
-      <Newsletter></Newsletter>
+      {/* Newsletter section above footer */}
+      <Newsletter />
+
+      {/* Footer main container */}
       <div className="w-10/12 mx-auto">
         <div className="pt-[200px] text-white">
+          {/* Footer Logo */}
           <div className="flex justify-center py-10">
-            <img className="" src="../assets/logo-footer.png" alt="" />
+            <img src="../assets/logo-footer.png" alt="Footer Logo" />
           </div>
-          {/* links */}
+
+          {/* Footer Links Section */}
           <div className="flex flex-col gap-10 md:flex-row justify-between ">
+            {/* About us column */}
             <div>
-              <ul className=" leading-7">
+              <ul className="leading-7">
                 <h2 className="font-semibold text-[18px] mb-3">About us</h2>
-                <li className="text-[16px]">We are a passionate team </li>
-                <li className="text-[16px]">
-                  dedicated to providing the best{" "}
-                </li>
+                <li className="text-[16px]">We are a passionate team</li>
+                <li className="text-[16px]">dedicated to providing the best</li>
                 <li className="text-[16px]">services to our customers</li>
               </ul>
             </div>
+
+            {/* Quick Links column */}
             <div>
               <ul className="list-disc list-inside leading-8">
                 <h2 className="font-semibold text-[18px] mb-3">Quick Links</h2>
@@ -31,17 +37,21 @@ const Footer = () => {
                 <li className="text-[16px]">Contact</li>
               </ul>
             </div>
+
+            {/* Subscribe newsletter column */}
             <div>
               <h2 className="font-semibold text-[18px] mb-3">Subscribe</h2>
-              <p className="text-[16px]  leading-7">
+              <p className="text-[16px] leading-7">
                 Subscribe to our newsletter for the <br />
                 latest updates.
               </p>
-              <div className="mt-3 flex ">
+
+              {/* Email input with subscribe button */}
+              <div className="mt-3 flex">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className=" bg-white text-black border-gray-300 py-2 px-6 rounded-l-lg focus:outline-none text-[16px]"
+                  className="bg-white text-black border-gray-300 py-2 px-6 rounded-l-lg focus:outline-none text-[16px]"
                 />
                 <button className="bg-gradient-to-r from-yellow-300 to-pink-300 text-black py-2 px-6 rounded-r-lg font-bold text-[16px]">
                   Subscribe
@@ -51,8 +61,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className=" mt-12 text-gray-800" />
-      <div className="text-[#ffffff6b] font-thin text-[16px] text-center py-5">@2024 BPL All Rights Reserved. </div>
+
+      {/* Divider line */}
+      <hr className="mt-12 text-gray-800" />
+
+      {/* Footer bottom text */}
+      <div className="text-[#ffffff6b] font-thin text-[16px] text-center py-5">
+        @2024 BPL All Rights Reserved.
+      </div>
     </div>
   );
 };
