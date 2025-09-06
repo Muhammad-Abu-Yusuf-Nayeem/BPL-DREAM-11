@@ -43,38 +43,38 @@ src/
 ---
 
 ## 📸 Screenshots
+![Screenshot](https://i.ibb.co.com/wry35wTd/modified-image.png)
 
-https://i.ibb.co.com/wry35wTd/modified-image.png
 
 ---
 
 ## ⚡ Getting Started
 
-# 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
-git clone https://github.com/Muhammad-Abu-Yusuf-Nayeem/BPL-DREAM-11
-cd BPL-DREAM-11
+- git clone https://github.com/Muhammad-Abu-Yusuf-Nayeem/BPL-DREAM-11
+- cd BPL-DREAM-11
 
-# 2️⃣ Install required dependencies
+### 2️⃣ Install required dependencies
 
-# React Toastify (for toast notifications)
+### React Toastify (for toast notifications)
 
 npm install react-toastify
 
-# PropTypes (for props validation)
+### PropTypes (for props validation)
 
 npm install prop-types
 
-# React Icons (for icons like user, flag, delete, etc.)
+### React Icons (for icons like user, flag, delete, etc.)
 
 npm install react-icons
 
-# 3️⃣ Optional but recommended: Tailwind CSS (for styling)
+### 3️⃣ Optional but recommended: Tailwind CSS (for styling)
 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
-# 4️⃣ Run the development server
+### 4️⃣ Run the development server
 
 npm run dev
 
